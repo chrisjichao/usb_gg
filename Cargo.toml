@@ -6,3 +6,11 @@ license = "Apache-2.0"
 
 
 [dependencies]
+tokio = { version = "1", features = ["full"] }
+rustix = { version = "0.38", features = ["fs", "std", "mount"] }
+thiserror = "2"
+[[example]]
+name = "main"
+path = "examples/main.rs"
+doc-scrape-examples = true
+
